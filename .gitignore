@@ -1,0 +1,66 @@
+# === Python bytecode and compiled files ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyo
+.Python
+
+# === Virtual Environments ===
+venv/
+env/
+ENV/
+.venv/
+
+# === Environment Variables ===
+.env
+.env.*
+
+# === Jupyter Notebooks Checkpoints ===
+.ipynb_checkpoints/
+
+# === Logs and Local Data ===
+*.log
+*.out
+*.pid
+*.gz
+*.tmp
+logs/
+data/
+output/
+storage/
+temp/
+cache/
+
+# === Coverage and Test Reports ===
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.pytest_cache/
+.tox/
+noxfile_*.json
+
+# === Build Artifacts ===
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# === Editors ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+eh

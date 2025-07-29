@@ -1,0 +1,15 @@
+[Unit]
+Description=Book Study Backend Service
+After=network.target
+
+[Service]
+Type=exec
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/book-study-backend
+Environment="PATH=/var/www/book-study-backend/venv/bin"
+ExecStart=/var/www/book-study-backend/venv/bin/gunicorn app.main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
